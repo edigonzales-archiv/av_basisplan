@@ -1,0 +1,17 @@
+
+ ./basisplan.py -p 3 -c sw -s 10000 --tile 1107-3 /home/stefan/Projekte/basisplan/bpav10000_11.csv /home/stefan/tmp/
+
+./basisplan.py -k -p 3 -c sw -s 10000 --tile 1107-3 /home/stefan/Projekte/basisplan/bpav10000_11.csv /home/stefan/tmp/
+
+./basisplan.py  -p 3 -c sw -s 10000 --tile 1152-1 /home/stefan/Projekte/basisplan/bpav10000_5.csv /home/stefan/tmp/ 
+
+
+./basisplan.py --noclip  -p 3 -c sw -s 10000 --tile 1152-1 /home/stefan/Projekte/basisplan/bpav10000_5.csv /home/stefan/tmp/
+
+
+./basisplan.py -k --noclip  -p 3 -c sw -s 10000 --tile 1152-2 /home/stefan/Projekte/basisplan/bpav10000_5.csv /home/stefan/tmp/
+
+
+./basisplan.py --noclip  -p 3 -c sw -s 10000 /home/stefan/Projekte/basisplan/bpav10000_5.csv /home/stefan/tmp/
+
+MASKE zeugs...???? 

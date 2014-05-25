@@ -5,7 +5,8 @@ ADMINPWD="bpadmin"
 USER="mspublic"
 USERPWD="mspublic"
 
-DB_NAME="bpav"
+# Pro Kanton eine DB?!
+DB_NAME="bpav_sz"
 PG_VERSION="8.4"
 
 echo "Delete database: $DB_NAME"

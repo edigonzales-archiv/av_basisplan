@@ -23,5 +23,11 @@ Werden nur einzelne Kacheln eines Kantons gerechnet, sind hässliche Artefakte a
 
 Datenimport
 -----------
-Die Höhenkurven werden in das Schema `av_dtm_dom` mit dem Skript `create_dtm_schema_and_import.sh` importiert. Für das Relief muss mit `gdal_buildvrt` ein VRT erstellt werden.
+Die Höhenkurven werden in das Schema `av_dtm_dom` mit dem Skript `create_dtm_schema_and_import.sh` importiert. Für das Relief muss mit
+
+```
+gdalbuildvrt relief.vrt *.tif
+``` 
+
+ein VRT erstellt werden.
 

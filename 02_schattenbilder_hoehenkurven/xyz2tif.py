@@ -121,10 +121,6 @@ for feature2 in layer2:
       os.system("rm " + DTM_DIR + dtm_base_name + "_tmp_wrong_nodata.tif")
       os.system("rm " + DTM_DIR + dtm_base_name + "_tmp_correct_nodata.tif")
       os.system("rm " + DTM_DIR + dtm_xyz_name)
-
-      
-      
-      
-      #os.system("rm " + DTM_DIR + dtm_base_name + "_tmp.tif")
+      os.system("rm " + DTM_DIR + "dtm_xyz.csv")
 
 print "Hallo Stefan."

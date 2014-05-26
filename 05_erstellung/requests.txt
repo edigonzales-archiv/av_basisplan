@@ -1,0 +1,8 @@
+./basisplan.py -p 3 -c sw -s 10000 --tile 1152-3 ./bpav10000_5.csv /home/stefan/tmp/bpav10000sw_sz/
+./basisplan.py -p 3 -c f -s 5000 --tile 1152-33 ./bpav5000_5.csv /home/stefan/tmp/bpav5000f_sz/
+
+./basisplan.py -p 3 -c f -s 10000 --tile 1152-3 ./bpav10000_5.csv /home/stefan/tmp/bpav10000f_sz/
+./basisplan.py -p 3 -c sw -s 5000 --tile 1152-33 ./bpav5000_5.csv /home/stefan/tmp/bpav5000sw_sz/
+
+
+

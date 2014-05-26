@@ -61,7 +61,7 @@ CREATE OR REPLACE VIEW av_basisplan.bodenbedeckung_objektname_generalisiert_v AS
 
 ALTER TABLE av_basisplan.bodenbedeckung_objektname_generalisiert_v OWNER TO bpadmin;
 GRANT ALL ON TABLE av_basisplan.bodenbedeckung_objektname_generalisiert_v TO bpadmin;
-GRANT SELECT ON TABLE av_basisplan.bodenbedeckung_objektname_generalisiert_v TO bpadmin;
+GRANT SELECT ON TABLE av_basisplan.bodenbedeckung_objektname_generalisiert_v TO mspublic;
 
 
 -- DROP VIEW av_basisplan.nomenklatur_gelaendename_v;

@@ -42,6 +42,15 @@ sudo cp -r /path/to/grundbuchplan-dir/ .
 
 Im QGIS svg-Ordner mit den vielen SVG-Unterordner sollte jetzt ein *grundbuchplan*-Unterordner sein.
 
+### Masken
+Es sind pro Kanton drei Polygone notwendig:
+
+* Hintergrundfläche
+* Kantonsfläche
+* Maske (Hintergrundfläche minus Kantonsfläche)
+
+Zur Zeit werden diese drei Polygone manuell erzeugt und müssen mit dem Skript `import_masks.sh` importiert werden. 
+
 ### QGS
 Pro Kanton werden die QGIS-Projekte erstellt. So wird das Zuschneiden/Maskieren (falls das überhaupt gewünscht wird einfacher). Benennung der Dateien:
 
@@ -49,3 +58,5 @@ Pro Kanton werden die QGIS-Projekte erstellt. So wird das Zuschneiden/Maskieren 
 * bpav_10000sw_sz.qgs = Masstab 1:10'000 / schwarz-weiss / Kanton Schwyz
 * bpav_5000f_sz.qgs = Masstab 1:5'000 / farbig / Kanton Schwyz
 * bpav_5000sw_sz.qgs = Masstab 1:5'000 / farbig / Kanton Schwyz
+
+Im QGIS-Projekt muss nur der Datenbankname angepasst werden.

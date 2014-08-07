@@ -1,6 +1,23 @@
 Schattenbilder & Höhenkurven aus DTM-AV 2m-Grid
 ===============================================
 
+Achtung
+-------
+Chaos wegen gdal-dev. Zuerst
+
+```
+export LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/gdal/gdal-dev/lib
+export PYTHONPATH=$PYTHONPATH:/usr/local/lib/python2.6/dist-packages/GDAL-2.0.0-py2.6-linux-x86_64.egg
+```
+
+ausführen.
+
+Im Skript wurde explizit der Pfad zu der Devel-Version von den Binaries von gdal/ogr gesetzt.
+
+
+Einleitung
+----------
+
 Mit zwei Python-Skripts werden sowohl die Schattenbilder (das Relief) wie auch die Höhenkurven aus dem DTM-AV 2m-Grid gerechnet. Neu ist es auch effizient möglich aus den DTM-Rohdaten die Produkte zu erzeugen. `gdal_grid` ist sehr langsam wenn **nicht** *nearest* als Interpolationsalgorithmus verwendet wird und/oder wenn der Suchradius sehr gross wird. Neu wird jetzt auf für Rohdaten *nearest* verwendet. Die *nodata*-Rasterzellen werden anschliessend mit `gdal_fillnodata.py` gefüllt.
 
 Es werden Shapes mit den Kantonsgrenzen und der Tileindex des DTM/DOM verwendet. Der Pfad ist in den Skripten hardcodiert. 

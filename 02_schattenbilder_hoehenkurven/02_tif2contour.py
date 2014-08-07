@@ -8,7 +8,8 @@ import shutil
 # Zu bearbeitender Kanton
 # 5 = SZ
 # 11 = SO
-KT_NR = 5
+# 8 = GL
+KT_NR = 8
 
 # Verzeichnis der DTM-GeoTIFF
 DTM_DIR = "/home/stefan/tmp/bpav_sz/dtm_roh/"
